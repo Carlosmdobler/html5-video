@@ -3,16 +3,18 @@
 <head>
     <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reproducción de Vídeo en HTML5</title>
+    <title>Reproducción de vídeo en HTML5</title>
 </head>
 <body>
-    <h1>Reproducción de Vídeo en HTML5</h1>
-    <video controls width="1280" height="720">
+    <h1>Reproducción de vídeo en HTML5</h1>
+    <video controls width="854" height="480" poster="poster.jpg" controlsList="nodownload" preload="auto" defaultPlaybackRate="1.0" volume="0.8" disablepictureinpicture>
         <source src="VID_PR_H264_720p.mp4" type="video/mp4">
         <source src="VID_PR_H264_360p.mp4" type="video/mp4">
         <source src="VID_PR_VP9_720p.webm" type="video/webm">
         <source src="VID_PR_VP9_360p.webm" type="video/webm">
         Tu navegador no soporta el elemento de vídeo.
+        <track src="captions.es.vtt" kind="captions" srclang="es" label="Español">
+	    <track src="captions.en.vtt" kind="captions" srclang="en" label="English">
     </video>
 </body>
 </html>
